@@ -1,0 +1,752 @@
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: #FFEAD3 ;
+}
+
+/* nav */
+header {
+  display: flex;
+  justify-content: center; /* center everything horizontally */
+  align-items: center;
+  background-color: #FFEAD3;
+  padding-top: 3%;
+}
+
+/* navigation */
+nav ul {
+  display: flex;
+  justify-content: center; /* center items inside */
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem; /* space between items */
+}
+
+/* navigation elements */
+nav ul li {
+  font-size: 1.1em;
+  color: #D25353;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover {
+  color: #EA7B7B;
+}
+
+
+/* welcome effect */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+}
+
+.welcome {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+    min-height: 100vh;
+    font-weight: 300;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #FFEAD3;
+}
+
+.text-shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  animation: shadows 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    transform: translate(-3px, -3px);
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    transform: translate(-6px, -6px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    transform: translate(-9px, -9px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+/* scroll effect */
+.scroll-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: bounce 1s infinite;
+
+     color: #9E3B3B;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.scroll-down svg {
+  margin-bottom: 5px;
+}
+
+.scroll{
+  
+     color: #9E3B3B;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25%, 75% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+
+
+/* envelope */
+.container{
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.valentines{
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+
+.envelope{
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #f08080;
+  display: grid;
+  place-items: center;
+
+
+}
+
+.envelope::before{
+  content: '';
+  position: absolute;
+  width: 212px;
+  height: 212px;
+  background: #f08080;
+  transform: rotate(45deg);
+  top: -105px;
+  left: 44px;
+  border-radius: 30px 0 0 0;
+}
+
+.front{
+  position: absolute;
+  border-right: 180px solid #f4978e;
+  border-top: 95px solid transparent;
+  border-bottom: 100px solid transparent;
+  left: 120px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  z-index: 10;
+}
+
+.front::before{
+  content: '';
+  position: absolute;
+  border-left: 300px solid #fda996;
+  border-top: 195px solid transparent;
+  left: -120px;
+  top: -95px;
+}
+
+/* letter */
+.card{
+  position: relative;
+  width: 280px;
+  height: 221px;;
+
+  background-image: url("/img/letter2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 2px;
+  display: grid;
+  place-items: center;
+
+  transition: 1s ease;
+  transform: translateY(-10px);
+  
+}
+
+/* open state on scroll */
+.valentines.open .card{
+  transform: translateY(-140px);
+}
+
+/* image inside card */
+.letter-img{
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* floating animation */
+@keyframes up{
+  0%, 100%{ transform: translateY(0); }
+  50%{ transform: translateY(-30px); }
+}
+
+/* shadow */
+.valentines::before{
+  content: '';
+  position: absolute;
+  width: 330px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.3);
+  top: 240px;
+  left: -15px;
+  animation: scale 3s linear infinite;
+}
+
+@keyframes scale{
+  0%, 100%{ transform: scaleX(1); }
+  50%{ transform: scaleX(.85); }
+}
+
+
+/* about me */
+.about-me{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 80px;
+}
+
+.text{
+  flex: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.envelope-section{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.container{
+  transform: scale(1.1);
+  transform-origin: center;
+}
+
+.text{
+    color:#f07a6a;
+    line-height: 0.9;
+}
+
+.text h2{
+    margin: 0;
+}
+
+.text h1{
+    margin: 0;
+    margin-top: 15px;
+
+
+}
+.name{
+    font-family: "Bungee", sans-serif;
+    font-size: 5em;
+    color:#9E3B3B;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+/* skills and course description */
+.skills-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #9E3B3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notebook-wrapper {
+    position: relative;
+    width: 60vw; 
+}
+
+.notebook-bg {
+    width: 100%;
+    display: block;
+}
+
+.skill-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-box img {
+    width: 40%; /* size of individual icons */
+    height: auto;
+    cursor: pointer;
+}
+
+/* label */
+.skill-label {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1vw;
+    color: #333;
+    margin-top: 5px;
+    white-space: nowrap;
+    
+    /* reveal animation */
+    clip-path: inset(0 100% 0 0); 
+    transition: clip-path 0.5s steps(15);
+}
+
+/* hover state */
+.skill-box img:hover {
+    transform: scale(1.1) rotate(3deg); /* slight lift and tilt */
+}
+
+.skill-box:hover .skill-label {
+    clip-path: inset(0 0 0 0); /* reveals text */
+}
+
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.skill-name {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    color: #333;
+    
+    /* initially hidden via clipping */
+    clip-path: inset(0 100% 0 0); 
+    transition: clip-path 0.8s steps(40); 
+    white-space: nowrap;
+}
+
+/* When the icon or the container is hovered, reveal the text */
+.skill-item:hover .skill-name {
+    clip-path: inset(0 0 0 0); /* Reveals the text from left to right */
+}
+
+.skill-item:hover .skill-icon {
+    animation: jitter 0.2s infinite;
+}
+
+@keyframes jitter {
+    0% { transform: rotate(0deg); }
+    33% { transform: rotate(1deg); }
+    66% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+/* projects */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;   
+    align-content: flex-start; 
+    text-align: center;
+    padding: 50px;
+
+    min-height: 100vh; 
+    
+
+}
+
+.projects h1 {
+    width: 100%;
+    font-family: "Bungee", sans-serif;
+    color:#9E3B3B;
+    margin: 0;
+    margin-top: 10%;
+}
+
+.projects h2 {
+    width: 100%;
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 80px;
+    color:#f07a6a;
+}
+
+.projects img {
+    width: 220px; 
+    height: 240px;
+    display: block;
+    cursor: pointer;
+    margin: 0 0 20px 20px;
+
+    
+}
+
+.projects img:hover {
+    transform: translateY(-10px) rotate(3deg); /* lift and slight tilt */
+    filter: drop-shadow(15px 15px 25px rgba(0,0,0,0.2)); 
+}
+
+.projects img:active {
+  /* squishes down when clicked */
+  transform: scale(0.95);
+}
+
+
+
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20vh;
+    justify-content: center;
+    background-color: #9E3B3B;
+    color: #FFEAD3;
+    width: 100vw;
+    height: 10vh;
+    font-size: 1em;
+}
+
+
+/*  my projects */
+.list div{
+    margin-bottom: 10vh;
+    padding:5%;
+}
+.slide .overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.slide {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+      overflow: hidden;
+
+}
+
+.overlay.left {
+    left: -8vw;
+    align-items: flex-start;
+}
+
+.overlay.right {
+    right: -7vw;
+    align-items: flex-end;
+}
+
+
+.overlay video {
+    width: 28vw;
+    max-width: 450px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.cta {
+    color: #EA7B7B;
+    text-decoration: none;
+    font-family: "Bungee", sans-serif;
+    font-size: 1rem;
+
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+    border-radius: 8px;
+
+    transition: 0.2s ease;
+
+    position: absolute;
+    top: 90%;
+
+}
+
+.overlay.left .cta {
+    left: 12%;
+}
+
+.overlay.right .cta {
+    right: 12%;
+    left: auto; /* important: cancels left */
+}
+
+.cta:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* mobile responsiveness */
+@media (max-width: 768px) {
+    /* Prevent the parent container from overflowing */
+    .list {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    .slide {
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        align-items: center; 
+        /* Fix the horizontal cutoff */
+        width: 100%; 
+        overflow: visible; 
+    }
+
+    .slide img {
+        position: relative;
+        /* CRITICAL: Must be less than 100% to see the shift */
+        width: 100%; 
+        height: auto;
+        min-height: 200px;
+        max-height: 300px;
+        inset: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* Shift images for slides 1 and 3 to the LEFT */
+    #one img, #three img {
+        margin-right: 25%; /* Ensures it touches the left edge */
+    }
+
+    /* Shift images for slides 2 and 4 to the RIGHT */
+    #two img, #four img {
+        margin-left: 25%; /* Ensures it touches the right edge */
+    }
+
+    .overlay.left, 
+    .overlay.right {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        padding: 20px 0;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center !important; 
+        gap: 10px;
+    }
+
+    .overlay video {
+        /* Ensure video doesn't cause overflow */
+        width: 90%; 
+        max-width: 450px;
+        height: auto;
+    }
+
+    .overlay.left .cta,
+    .overlay.right .cta {
+        position: static;
+        margin: 10px auto;
+        transform: none;
+        left: auto;
+        right: auto;
+        width: fit-content;
+
+        font-size: 0.8rem;
+    }
+
+    .about-me {
+        flex-direction: column; /* Stacks text on top of envelope */
+        justify-content: center;
+        padding: 40px 20px;
+        min-height: auto;
+        text-align: center; /* Centers the "Hi, I'm" text */
+    }
+
+    .text {
+        flex: none;
+        margin-bottom: 50px; /* Space between name and envelope */
+        width: 100%;
+    }
+
+    .name {
+        font-size: 3em; /* Shrink large text for mobile screens */
+        word-wrap: break-word;
+    }
+
+    .envelope-section {
+        flex: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust the container height so the envelope isn't floating in 100vh of space */
+    .container {
+        min-height: 400px; 
+        transform: scale(0.8); /* Slightly shrink the envelope for small screens */
+        width: 100%;
+        overflow: visible; 
+
+    }
+
+    .valentines {
+        top: 0; /* Adjust positioning since we are no longer centering in 100vh */
+    }
+
+
+    .valentines.open .card {
+        transform: translateY(-150px); 
+    }
+
+    /* 1. Change the notebook image */
+    .notebook-bg {
+        /* Replace this with your mobile-specific image path */
+        content: url("/img/skill2.png"); 
+        width: 90vw; /* Make it larger on mobile screens */
+    }
+
+    .notebook-wrapper {
+        width: 90vw;
+    }
+
+    /* 2. Hide all the individual skill boxes and labels */
+    .skill-box {
+        display: none !important;
+    }
+
+    /* 3. Disable the skills section 100vh constraint if needed */
+    .skills-section {
+        height: auto;
+        padding: 50px 0;
+    }
+
+      nav ul {
+    flex-direction: column; /* stack vertically */
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+}

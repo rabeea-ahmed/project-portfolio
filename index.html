@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabeea's Things</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- header -->
+     <header>
+        <!-- navigation -->
+         <nav>
+            <ul>
+                <li><a style=" text-decoration: underline; text-underline-offset: 8px;  color:inherit;" href="index.html">about me</a></li>
+                <li><a style="text-decoration:none; color:inherit;" href=projects.html>projects</a></li>
+            </ul>
+         </nav>
+     </header>
+
+
+
+     <!-- welcome -->
+    <div class="welcome">
+        <h2 class="text-shadows">welcome!</h2>
+        <div class="scroll-down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            <path fill-rule="evenodd"
+                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+        </svg>
+        scroll down
+        </div>
+    </div>
+
+    <!-- about me -->
+    <div class="about-me" >
+        <!-- name -->
+        <div class="text" data-aos="fade-in" data-aos-duration="1000">
+            <h2 style="font-size: 2em;">Hi, I'm</h2>
+            <h1 class="name">RABEEA AHMED</h1>
+        </div>
+
+        <!-- envelope -->
+        <div class="envelope-section">
+            <div class="container">
+            <div class="valentines" id="valentine">
+
+                <div class="envelope">
+                <div class="card"></div>
+                </div>
+
+                <div class="front"></div>
+
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- skills and course description -->
+    <div class="skills-section">
+    <div class="notebook-wrapper" data-aos="fade-right">
+        <img src="/img/skill.png" class="notebook-bg" >
+
+        <div class="skill-box html" style="top: 10%; left: 15%;">
+            <img src="/img/html.png" alt="HTML">
+            <span class="skill-label">HTML</span>
+        </div>
+
+        <div class="skill-box css" style="top: 18%; left: 24.5%;">
+            <img src="/img/css.png" alt="CSS">
+            <span class="skill-label">CSS</span>
+        </div>
+
+        <div class="skill-box js" style="top: 13%; left: 34%;">
+            <img src="/img/js.png" alt="Javascript">
+            <span class="skill-label">JavaScript</span>
+        </div>
+
+        <div class="skill-box ai" style="top: 28%; left: 16%;">
+            <img src="/img/illustrator.png" alt="Adobe Illustrator">
+            <span class="skill-label">Adobe Illustrator</span>
+        </div>
+
+        <div class="skill-box pr" style="top: 44%; left: 19%;">
+            <img src="/img/premier.png" alt="Premier Pro">
+            <span class="skill-label">Premier Pro</span>
+        </div>
+
+        <div class="skill-box ps" style="top: 34%; left: 31%;">
+            <img src="/img/photoshop.png" alt="Photoshop">
+            <span class="skill-label">Adobe Photoshop</span>
+        </div>
+        
+        </div>
+    </div>
+
+    <!-- projects -->
+    <div data-aos="fade-up" data-aos-duration="1000" class="projects">
+        <h1>stuff i've built</h1>
+        <h2>check it out!</h2>
+        <a href="projects.html#one">
+            <img src="img/website.png">
+        </a>
+
+        <a href="projects.html#two">
+            <img src="img/comic.png">
+        </a>
+
+        <a href="projects.html#three">
+            <img src="img/sound.png">
+        </a>
+
+        <a href="projects.html#four">
+            <img src="img/video.png">
+        </a>
+    </div>
+    
+
+    <!-- javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const el = document.querySelector("#valentine");
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            el.classList.add("open");
+        } else {
+            el.classList.remove("open");
+        }
+        });
+        }, { threshold: 0.5 });
+
+        observer.observe(el);
+
+        AOS.init();
+        
+    </script>
+
+</body>
+
+<!-- footer -->
+<footer>
+    <div>Made by Rabeea Ahmed (✿◡‿◡)</div>
+</footer>
+
+</html>

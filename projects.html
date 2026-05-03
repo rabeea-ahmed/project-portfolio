@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabeea's Things</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- header -->
+     <header>
+        <!-- navigation -->
+         <nav>
+            <ul>
+                <li><a style="text-decoration:none; color:inherit; " href="index.html">about me</a></li>
+                <li><a style="color:inherit;   text-decoration: underline; text-underline-offset: 8px;  " href=projects.html>projects</a></li>
+            </ul>
+         </nav>
+     </header>
+
+
+     <!-- welcome -->
+    <div class="welcome">
+        <div class="scroll">check out my</div>
+        <h2 class="text-shadows">projects</h2>
+        <br>
+        <br>
+        <div class="scroll-down">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            <path fill-rule="evenodd"
+                d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+        </svg>
+        scroll down
+        </div>
+    </div>
+    
+    <!-- projects -->
+    <div class="list">
+        <div id="one" class="slide" data-aos="fade-in" data-aos-duration="1000">
+            <img src="img/8.png">
+
+            <div class="overlay left">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/Website_Recording.mp4" type="video/mp4">
+                </video>
+
+                <a href="https://rabeea-ahmed.github.io/comms-lab/" class="cta">Access Project!</a>
+            </div>
+        </div>
+
+        <div id="two" class="slide" data-aos="fade-in" data-aos-duration="1000">
+            <img src="img/9.png">
+
+            <div class="overlay right">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/alice-in-teamLab recording.mp4" type="video/mp4">
+                </video>
+
+                <a href="https://rabeea-ahmed.github.io/interactive-comic/" class="cta">Access Project!</a>
+            </div>
+        </div>
+
+        <div id="three" class="slide" data-aos="fade-in" data-aos-duration="1000">
+            <img src="img/10.png">
+
+            <div class="overlay left">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/mEOWssing recording.mp4" type="video/mp4">
+                </video>
+
+                <a href="https://rabeea-ahmed.github.io/mEOWssing/" class="cta">Access Project!</a>
+            </div>
+        </div>
+
+        <div id="four" class="slide" data-aos="fade-in" data-aos-duration="1000">
+            <img src="img/11.png">
+
+            <div class="overlay right">
+                <video autoplay muted loop playsinline>
+                    <source src="videos/how-to-not-procrastinate recording.mp4" type="video/mp4">
+                </video>
+
+                <a href="https://rbashokov.github.io/comm-lab-project4/" class="cta">Access Project!</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- javascript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>    
+        document.querySelectorAll("video").forEach(v => {
+            v.playbackRate = 2.5; 
+        });
+
+        AOS.init();
+    </script>
+</body>
+<!-- footer -->
+<footer>
+    <div>Made by Rabeea Ahmed (✿◡‿◡)</div>
+</footer>
+</html>
