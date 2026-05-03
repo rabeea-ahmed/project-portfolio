@@ -248,7 +248,7 @@ nav ul li:hover {
   width: 280px;
   height: 221px;;
 
-  background-image: url("/img/letter2.png");
+  background-image: url("img/letter.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -592,7 +592,7 @@ footer {
 
 .overlay.right .cta {
     right: 12%;
-    left: auto; /* important: cancels left */
+    left: auto; 
 }
 
 .cta:hover {
@@ -603,7 +603,7 @@ footer {
 
 /* mobile responsiveness */
 @media (max-width: 768px) {
-    /* Prevent the parent container from overflowing */
+    /* prevent the parent container from overflowing */
     .list {
         overflow-x: hidden;
         width: 100%;
@@ -615,14 +615,12 @@ footer {
         flex-direction: column;
         margin-bottom: 5vh;
         align-items: center; 
-        /* Fix the horizontal cutoff */
         width: 100%; 
         overflow: visible; 
     }
 
     .slide img {
         position: relative;
-        /* CRITICAL: Must be less than 100% to see the shift */
         width: 100%; 
         height: auto;
         min-height: 200px;
@@ -632,14 +630,14 @@ footer {
         object-fit: cover;
     }
 
-    /* Shift images for slides 1 and 3 to the LEFT */
+    /* shift images for slides 1 and 3 to the left */
     #one img, #three img {
-        margin-right: 25%; /* Ensures it touches the left edge */
+        margin-right: 25%;
     }
 
-    /* Shift images for slides 2 and 4 to the RIGHT */
+    /* shift images for slides 2 and 4 to the right */
     #two img, #four img {
-        margin-left: 25%; /* Ensures it touches the right edge */
+        margin-left: 25%; 
     }
 
     .overlay.left, 
@@ -659,7 +657,7 @@ footer {
     }
 
     .overlay video {
-        /* Ensure video doesn't cause overflow */
+        /* ensure video doesn't cause overflow */
         width: 90%; 
         max-width: 450px;
         height: auto;
@@ -678,21 +676,21 @@ footer {
     }
 
     .about-me {
-        flex-direction: column; /* Stacks text on top of envelope */
+        flex-direction: column; /* stacks text on top of envelope */
         justify-content: center;
         padding: 40px 20px;
         min-height: auto;
-        text-align: center; /* Centers the "Hi, I'm" text */
+        text-align: center; /* centers the "Hi, I'm" text */
     }
 
     .text {
         flex: none;
-        margin-bottom: 50px; /* Space between name and envelope */
+        margin-bottom: 50px; /* space between name and envelope */
         width: 100%;
     }
 
     .name {
-        font-size: 3em; /* Shrink large text for mobile screens */
+        font-size: 3em; /* shrink large text for mobile screens */
         word-wrap: break-word;
     }
 
@@ -704,10 +702,9 @@ footer {
         align-items: center;
     }
 
-    /* Adjust the container height so the envelope isn't floating in 100vh of space */
     .container {
         min-height: 400px; 
-        transform: scale(0.8); /* Slightly shrink the envelope for small screens */
+        transform: scale(0.8); /* slightly shrink the envelope for small screens */
         width: 100%;
         overflow: visible; 
 
@@ -722,23 +719,22 @@ footer {
         transform: translateY(-150px); 
     }
 
-    /* 1. Change the notebook image */
+    /* change the notebook image */
     .notebook-bg {
-        /* Replace this with your mobile-specific image path */
-        content: url("/img/skill2.png"); 
-        width: 90vw; /* Make it larger on mobile screens */
+        content: url("img/skill-mobile.png"); 
+        width: 90vw; /* make it larger on mobile screens */
     }
 
     .notebook-wrapper {
         width: 90vw;
     }
 
-    /* 2. Hide all the individual skill boxes and labels */
+    /* hide all the individual skill boxes and labels */
     .skill-box {
         display: none !important;
     }
 
-    /* 3. Disable the skills section 100vh constraint if needed */
+    /* disable the skills section 100vh constraint if needed */
     .skills-section {
         height: auto;
         padding: 50px 0;
