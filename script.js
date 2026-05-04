@@ -37,8 +37,3 @@ popup.addEventListener("click", (e) => {
     }
 });
 
-
-// speed up demo videos
-document.querySelectorAll("video").forEach(v => {
-    v.playbackRate = 2.5; 
-});

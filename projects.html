@@ -104,6 +104,12 @@
     <script>
         // initialise scroll animations library
         AOS.init();
+
+        // speed up demo videos
+        document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("video").forEach(v => {
+            v.playbackRate = 2.5;
+        }); });
     </script>
 
     <script src="script.js"></script>
