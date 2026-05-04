@@ -194,7 +194,6 @@ nav ul li:hover {
 .valentines{
   position: relative;
   top: 50px;
-  cursor: pointer;
   animation: up 3s linear infinite;
 }
 
@@ -258,13 +257,16 @@ nav ul li:hover {
   place-items: center;
 
   transition: 1s ease;
-  transform: translateY(-10px);
+  transform: translateY(-23px);
+
+  cursor: pointer;
+
   
 }
 
 /* open state on scroll */
 .valentines.open .card{
-  transform: translateY(-140px);
+  transform: translateY(-130px);
 }
 
 /* image inside card */
@@ -388,7 +390,7 @@ nav ul li:hover {
 
 /* label */
 .skill-label {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     font-size: 1vw;
     color: #333;
     margin-top: 5px;
@@ -745,4 +747,38 @@ footer {
     gap: 1rem;
     padding: 1rem 0;
   }
+}
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    position: relative;
+    background: #fff9f9;
+    padding: 20px;
+}
+
+.popup-content img {
+    max-width: 40vw;
+    max-height: 80vh;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
 }
