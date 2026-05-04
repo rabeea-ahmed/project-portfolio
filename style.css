@@ -550,14 +550,39 @@ nav ul li:hover {
 /* FOOTER */
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-top: 20vh;
     justify-content: center;
+    margin-top: 20vh;
     background-color: #9E3B3B;
     color: #FFEAD3;
     width: 100vw;
-    height: 10vh;
+    min-height: 10vh; 
     font-size: 1em;
+    padding: 10px 0; 
+    gap: 7px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap:15px;
+}
+
+/* style all font awesome icons */
+.fa {
+  font-size: 20px !important;
+  margin-bottom: 7px;;
+  color: #FFEAD3;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+/* hover effect */
+.fa:hover {
+  opacity: 0.7;
 }
 
 
