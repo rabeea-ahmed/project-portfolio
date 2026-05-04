@@ -142,43 +142,11 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-        const el = document.querySelector("#valentine");
-
-        const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            el.classList.add("open");
-        } else {
-            el.classList.remove("open");
-        }
-        });
-        }, { threshold: 0.5 });
-
-        observer.observe(el);
-
-
-        const card = document.querySelector(".card");
-        const popup = document.getElementById("popup");
-        const closeBtn = document.getElementById("closePopup");
-
-        card.addEventListener("click", () => {
-            popup.style.display = "flex";
-        });
-
-        closeBtn.addEventListener("click", () => {
-            popup.style.display = "none";
-        });
-
-        // optional: click outside image to close
-        popup.addEventListener("click", (e) => {
-            if (e.target === popup) {
-                popup.style.display = "none";
-            }
-        });
-
+        // initialise scroll animations library
         AOS.init();
-        
     </script>
+
+    <script src="script.js"></script>
 
 </body>
 
