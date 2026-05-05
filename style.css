@@ -2,7 +2,7 @@
 /* prevent horizontal scrolling */
 html, body {
     overflow-x: hidden;
-    cursor: url(https://cdn.custom-cursor.com/db/26334/32/color-pixels-melon-cursor.png) , default;
+    cursor: url(img/color-pixels-melon-cursor.png) , default;
 
 }
 
@@ -271,7 +271,7 @@ nav ul li:hover {
   transition: 1s ease;
   transform: translateY(-23px);
 
-  cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+  cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 
   
 }
@@ -346,7 +346,7 @@ nav ul li:hover {
     top: 10px;
     right: 15px;
     font-size: 30px;
-    cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+    cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 }
 
 /* about me section*/
@@ -438,7 +438,7 @@ nav ul li:hover {
 .skill-box img {
     width: 40%; /* size of individual icons */
     height: auto;
-    cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+    cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 }
 
 /* hidden label under each icon */
@@ -531,7 +531,7 @@ nav ul li:hover {
     width: 220px; 
     height: 240px;
     display: block;
-    cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+    cursor: url(img/color-pixels-melon-pointer.png) , pointer;
     margin: 0 0 20px 20px;
 
     
@@ -583,7 +583,7 @@ footer {
   align-items: center;
   justify-content: center;
 
-  cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+  cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 
 }
 /* hover effect */
@@ -592,7 +592,7 @@ footer {
 }
 
 a {
-  cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+  cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 }
 
 /* PAGE TWO */
@@ -675,13 +675,13 @@ a {
     position: absolute;
     top: 90%;
 
-    cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+    cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 
 
 }
 
 .cta:hover{
-  cursor: url(https://cdn.custom-cursor.com/db/26333/32/color-pixels-melon-pointer.png) , pointer;
+    cursor: url(img/color-pixels-melon-pointer.png) , pointer;
 
 }
 /* position CTA based on overlay side */
