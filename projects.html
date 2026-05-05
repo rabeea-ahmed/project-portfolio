@@ -14,10 +14,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* animation for swinging effect */
+        .slide img {
+            transform-origin: top center;
+            transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
 
+        [data-aos].aos-animate img {
+            animation: scroll-swing 1.5s ease-out forwards;
+        }
+
+        @keyframes scroll-swing {
+            0% { transform: rotate(8deg); }
+            30% { transform: rotate(-5deg); }
+            60% { transform: rotate(2deg); }
+            80% { transform: rotate(-1deg); }
+            100% { transform: rotate(0deg); }
+        }
+    </style>
 </head>
 <body>
-
     <!-- header -->
      <header>
         <!-- navigation -->
@@ -31,7 +48,7 @@
 
 
      <!-- welcome -->
-    <div class="welcome">
+    <div id="welcome" class="welcome">
         <div class="scroll">check out my</div>
         <h2 class="text-shadows">projects</h2>
         <br>
@@ -111,6 +128,7 @@
         document.querySelectorAll("video").forEach(v => {
             v.playbackRate = 2.5;
         }); });
+
     </script>
 
     <script src="script.js"></script>
